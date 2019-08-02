@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for news in news_list %}
+    <h1>{{ news.title }}</h1>
+    <p>{{ news.id }}</p>
+{% empty %}
+    <h1>Bu sorguya uygun netice yoxdur!</h1>
+{% endfor %}
+</body>
+</html>
